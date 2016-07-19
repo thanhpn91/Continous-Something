@@ -5,5 +5,4 @@ FastLane is a set of tools that simplify the deployment and release process. By 
 
 # The Lanes 
 
-Inline-style: 
 ![alt text](https://github.com/thanhpn91/Continous-Something/blob/master/lanes.png "Lanes")
