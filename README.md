@@ -23,5 +23,22 @@ Fastlane will work you through a setup process that ask some question as bellow:
 Fastlane will be created with 3 files:
 
 Appfile, which store app identifier and apple_id and also developer portal team Id
+
 Fastfile, which manages the defined lanes
+```
+lane :beta do 
+  #Version Increment
+  increment_version_number
+  commit_version_bump
+  push_to_git_remote
+  
+  # Building and Signing
+  cert
+  sigh
+  gym
+  
+  #Upload and Notify
+  crashlytics
+  slack
+end
 Snapfile, which lets you specify the devices and languages you want to provide screenshots for.
