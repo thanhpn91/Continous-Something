@@ -21,10 +21,18 @@ Fastlane will work you through a setup process that ask some question as bellow:
 
 ![alt text] "picture of folder")
 Fastlane will be created with 3 files:
+```
+app_identifier "com.siclo.selfie-cube" # The bundle identifier of your app
+apple_id "maxime.pouwels@siclo-mobile.com" # Your Apple email address
 
-Appfile, which store app identifier and apple_id and also developer portal team Id
+team_id "R5JFCDHMFY"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
 
 Fastfile, which manages the defined lanes
+
+Appfile, which store app identifier and apple_id and also developer portal team Id
 ```
 lane :beta do 
   #Version Increment
